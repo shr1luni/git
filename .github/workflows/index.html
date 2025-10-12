@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Web</h1>
+      <p>A small single-file HTML application (no CSS or JavaScript) — just HTML.</p>
+      <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#features">Features</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to Web</h2>
+        <p>This is a minimal HTML-only application named <strong>Web</strong>. Use the links above to navigate the single page.</p>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>"Web" is an example app built with only HTML. It demonstrates common elements you might need: headings, navigation, lists, tables, a form and anchors.</p>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Single-file HTML app</li>
+          <li>Semantic sections and navigation</li>
+          <li>Contact form (HTML only, posts to '#')</li>
+          <li>Static gallery (image placeholders using &lt;figure&gt;)</li>
+          <li>Sample data table</li>
+        </ul>
+
+        <h3>Sample data</h3>
+        <table border="1" cellpadding="6">
+          <caption>Example items</caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Alpha</td>
+              <td>First example item</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Beta</td>
+              <td>Second example item</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gamma</td>
+              <td>Third example item</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Plain HTML cannot embed live placeholders, but we can use descriptive figures:</p>
+        <figure>
+          <figcaption>Placeholder image 1</figcaption>
+          <pre>[ image 1 ]</pre>
+        </figure>
+        <figure>
+          <figcaption>Placeholder image 2</figcaption>
+          <pre>[ image 2 ]</pre>
+        </figure>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Use this simple HTML form. (Because this is pure HTML there is no real backend — the form posts to "#".)</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section id="footer">
+        <hr>
+        <p>© <time datetime="2025">2025</time> Web — simple HTML app</p>
+        <p><a href="#top">Back to top</a></p>
+      </section>
+    </main>
+  </body>
+</html>
